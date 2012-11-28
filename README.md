@@ -6,6 +6,10 @@ It supports ALL of the current Omegle functions, except for webcam chatting.
 
 Examples are in src/org/nikki/omegle/examples
 
+# Disclaimer
+
+This api was intended for good, not bad. If you see somebody using it to spam omegle with bots, I cannot do anything about it. Anybody can download this, and anybody can use it.
+
 # Requirements
 
 This library requires the JSON api from https://github.com/douglascrockford/JSON-java, without it, the library won't function.
