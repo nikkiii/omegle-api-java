@@ -226,9 +226,13 @@ public class OmegleSession {
 		for (int i = 0; i < events.length(); i++) {
 			JSONArray e = events.getJSONArray(i);
 
-			OmegleEvent event = OmegleEvent.valueOf(e.getString(0));
-			if(event != null) {
-				fireEvent(event, e);
+			try {
+				OmegleEvent event = OmegleEvent.valueOf(e.getString(0));
+				if(event != null) {
+					fireEvent(event, e);
+				}
+			} catch(IllegalArgumentException ex) {
+				// Ignore unknown events
 			}
 		}
 	}
