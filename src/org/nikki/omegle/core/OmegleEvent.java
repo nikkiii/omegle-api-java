@@ -33,5 +33,7 @@ public enum OmegleEvent {
 	antinudeBanned,
 	
 	// Internal events
-	disconnected, messageSent
+	disconnected, messageSent,
+	
+	statusInfo,identDigests
 }
